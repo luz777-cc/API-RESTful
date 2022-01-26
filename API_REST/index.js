@@ -29,7 +29,7 @@ app.get('/crearEntrada', function (req, res) {
     res.sendFile(path.join(__dirname + '/html/crearEntrada.html'));
 });
 
-app.get('/consultarDatos', function (req, res) {
+app.get('/consultarDatos', function (req, res) {   //imprime en pantalla los datos que se crearon
     if (usuario.nombre !== '' && usuario.apellido !== '' && usuario.id !== '') {
         res.json(usuario);
     } else {
